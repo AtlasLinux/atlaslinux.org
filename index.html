@@ -4,20 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>atlaslinux</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="atlaslinux.css" />
   </head>
   <body>
     <div class="banner">
       <div class="container">
         <p>
-          This site is under construction.
+          <strong>AtlasLinux is in active development</strong> — Join our
+          community to help shape the future of Linux
         </p>
       </div>
     </div>
 
     <header class="nav">
       <div class="container nav-inner">
-        <div class="brand">atlaslinux</div>
+        <div class="brand"><span class="accent">atlaslinux</span></div>
         <button
           class="nav-toggle"
           aria-label="Open navigation"
@@ -29,9 +36,9 @@
           <span class="nav-toggle-bar"></span>
         </button>
         <nav class="links" id="navLinks">
-          <a href="#features">Features</a>
-          <a href="#download">Download</a>
-          <a href="#docs">Documentation</a>
+          <a href="#features">Vision</a>
+          <a href="#download">Roadmap</a>
+          <a href="#docs">Get Involved</a>
           <a href="https://discord.gg/wKMcu8Ac" target="_blank" rel="noopener"
             >Discord</a
           >
@@ -54,18 +61,30 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <h1>
-              <span class="line">Welcome to</span>
+              <span class="line">Building</span>
               <span class="line accent">atlaslinux</span>
-              <span class="line">Lorem ipsum dolor sit amet</span>
+              <span class="line">Join our open-source project</span>
             </h1>
             <p class="lead">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              dictum urna a posuere facilisis. Integer laoreet nulla ac posuere
-              risus arcu vitae arcu.
+              We're creating a fast and simple Linux distribution. AtlasLinux
+              focuses on performance and ease of use. Help us build something
+              great.
             </p>
             <div class="cta">
-              <a class="btn" href="#download">Lorem Ipsum</a>
-              <a class="btn" href="#features">Dolor Sit</a>
+              <a
+                class="btn"
+                href="https://discord.gg/wKMcu8Ac"
+                target="_blank"
+                rel="noopener"
+                >Join Discord</a
+              >
+              <a
+                class="btn"
+                href="https://github.com/atlaslinux"
+                target="_blank"
+                rel="noopener"
+                >Contribute on GitHub</a
+              >
             </div>
           </div>
 
@@ -108,34 +127,37 @@ lorem ipsum — minimal, beautiful, blazing fast.
 
       <section id="features" class="features">
         <div class="container">
-          <h2 class="section-title">Why Choose atlaslinux?</h2>
+          <h2 class="section-title">
+            Why <span class="accent">atlaslinux</span>?
+            <span class="badge">Coming Soon</span>
+          </h2>
           <div class="grid">
-            <div class="card">
-              <h3>Lightning Fast</h3>
+            <div class="card disabled">
+              <h3>Fast Performance</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                efficitur nisl sed pulvinar placerat.
+                Built for speed with an optimized kernel and system. Runs well
+                on modern hardware.
               </p>
             </div>
-            <div class="card">
-              <h3>Secure by Default</h3>
+            <div class="card disabled">
+              <h3>Secure</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                rhoncus arcu nec fermentum gravida.
+                Built-in security features and regular updates to keep your
+                system safe.
               </p>
             </div>
-            <div class="card">
-              <h3>Minimal & Beautiful</h3>
+            <div class="card disabled">
+              <h3>Developer Tools</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                porta nisi ut dictum posuere.
+                Modern tools and good support for containers. Works well for
+                development.
               </p>
             </div>
-            <div class="card">
-              <h3>Community Driven</h3>
+            <div class="card disabled">
+              <h3>Community Built</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                vitae arcu sit amet sem consequat.
+                Open development where everyone can contribute. Join us and help
+                build AtlasLinux.
               </p>
             </div>
           </div>
@@ -144,31 +166,33 @@ lorem ipsum — minimal, beautiful, blazing fast.
 
       <section id="download" class="features">
         <div class="container">
-          <h2 class="section-title">Download atlaslinux</h2>
+          <h2 class="section-title">
+            Get <span class="accent">atlaslinux</span>
+            <span class="badge">In Development</span>
+          </h2>
           <p class="muted" style="text-align: center; margin-bottom: 32px;">
-            Lorem ipsum dolor sit amet.
+            AtlasLinux is in development. Join our community to stay updated and
+            help with the project.
           </p>
           <div class="grid">
-            <div class="card strong">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a
-                class="btn"
-                href="https://github.com/AtlasLinux"
-                target="_blank"
-                rel="noopener"
-                >Lorem</a
+            <div class="card disabled">
+              <h3>Alpha Release</h3>
+              <p>
+                Early version for testing. Help us find bugs and improve the
+                system.
+              </p>
+              <a class="btn disabled" href="#" onclick="return false;"
+                >Coming Soon</a
               >
             </div>
-            <div class="card">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a
-                class="btn"
-                href="https://github.com/AtlasLinux"
-                target="_blank"
-                rel="noopener"
-                >Ipsum</a
+            <div class="card disabled">
+              <h3>Stable Release</h3>
+              <p>
+                Ready for daily use with all features working and good
+                documentation.
+              </p>
+              <a class="btn disabled" href="#" onclick="return false;"
+                >Coming Soon</a
               >
             </div>
           </div>
@@ -177,39 +201,39 @@ lorem ipsum — minimal, beautiful, blazing fast.
 
       <section id="docs" class="features">
         <div class="container">
-          <h2 class="section-title">Documentation</h2>
+          <h2 class="section-title">
+            Get Involved <span class="badge">Join Us</span>
+          </h2>
           <div class="grid">
             <div class="card">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <h3>Development</h3>
+              <p>Write code, review changes, and help build the system.</p>
               <a
                 class="btn"
                 href="https://github.com/AtlasLinux"
                 target="_blank"
                 rel="noopener"
-                >Lorem</a
+                >GitHub</a
               >
             </div>
             <div class="card">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
+              <h3>Community</h3>
+              <p>
+                Join discussions, share ideas, and connect with other people.
+              </p>
               <a
                 class="btn"
-                href="https://github.com/AtlasLinux"
+                href="https://discord.gg/wKMcu8Ac"
                 target="_blank"
                 rel="noopener"
-                >Ipsum</a
+                >Discord</a
               >
             </div>
-            <div class="card">
-              <h3>Lorem Ipsum</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-              <a
-                class="btn"
-                href="https://github.com/AtlasLinux"
-                target="_blank"
-                rel="noopener"
-                >Dolor</a
+            <div class="card disabled">
+              <h3>Documentation <span class="badge">Soon</span></h3>
+              <p>Guides and help for using and contributing to AtlasLinux.</p>
+              <a class="btn disabled" href="#" onclick="return false;"
+                >Coming Soon</a
               >
             </div>
           </div>
@@ -220,16 +244,17 @@ lorem ipsum — minimal, beautiful, blazing fast.
     <footer class="footer">
       <div class="container foot-grid">
         <div class="foot-about">
-          <div class="brand">atlaslinux</div>
+          <div class="brand"><span class="accent">atlaslinux</span></div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-            ultricies sem vitae augue cursus.
+            Building a fast and simple Linux distribution with community help
+            and open development.
           </p>
         </div>
         <div class="foot-nav">
-          <h4>Navigate</h4>
-          <a href="#features">Features</a>
-          <a href="#download">Download</a>
+          <h4>Project</h4>
+          <a href="#features">Vision</a>
+          <a href="#download">Roadmap</a>
+          <a href="#docs">Get Involved</a>
         </div>
         <div class="foot-community">
           <h4>Community</h4>

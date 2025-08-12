@@ -1,32 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const navToggle = document.querySelector(".nav-toggle");
-  const navLinks = document.getElementById("navLinks");
-  if (navToggle && navLinks) {
-    navToggle.addEventListener("click", function () {
-      const open = navLinks.classList.toggle("open");
-      navToggle.setAttribute("aria-expanded", open ? "true" : "false");
-      document.body.classList.toggle("nav-open", open);
-    });
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        navToggle.setAttribute("aria-expanded", "false");
-        document.body.classList.remove("nav-open");
-      });
-    });
-    document.addEventListener("click", (e) => {
-      if (
-        navLinks.classList.contains("open") &&
-        !navLinks.contains(e.target) &&
-        !navToggle.contains(e.target)
-      ) {
-        navLinks.classList.remove("open");
-        navToggle.setAttribute("aria-expanded", "false");
-        document.body.classList.remove("nav-open");
-      }
-    });
-  }
-});
 document.addEventListener("DOMContentLoaded", () => {
   const r = document.documentElement;
   const t = document.getElementById("themeToggle");
